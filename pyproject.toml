@@ -1,0 +1,31 @@
+[project]
+name = "spark-research-discovery"
+version = "0.1.0"
+description = "AI Research Idea Discovery Platform for MIMIC-IV and eICU"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.34.0",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "networkx>=3.3",
+    "neo4j>=5.23",
+    "pymupdf>=1.24",
+    "requests>=2.32",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.3",
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "tqdm>=4.66",
+    "python-dateutil>=2.9",
+    "pyyaml>=6.0",
+    "sqlalchemy>=2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "httpx>=0.27",
+    "ruff>=0.8",
+]
